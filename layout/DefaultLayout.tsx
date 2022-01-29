@@ -22,9 +22,12 @@ export const DefaultLayout: React.FC = ({ children }) => {
 
 const Navigation = () => {
   const router = useRouter()
-  const pages = [{ name: 'Pretty JSON', path: '/pretty-json' }]
+  const pages = [
+    { name: 'Pretty JSON', path: '/pretty-json' },
+    { name: 'URL Encode', path: '/url-encode' },
+  ]
   return (
-    <List spacing="2">
+    <List spacing="4">
       {pages.map((page, idx) => {
         const current = router.pathname === page.path
         return (
