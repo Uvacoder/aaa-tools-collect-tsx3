@@ -7,6 +7,8 @@ const pages: { name: string; path: string }[] = [
   { name: 'Pretty JSON', path: '/pretty-json' },
   { name: 'URL Encode', path: '/url-encode' },
   { name: 'URL Decode', path: '/url-decode' },
+  { name: 'Base64 Encode', path: '/base64-encode' },
+  { name: 'Base64 Decode', path: '/base64-decode' },
   { name: 'Preview DataURL', path: '/preview-dataurl' },
   { name: 'File to DataURL', path: '/file-to-dataurl' },
   { name: 'Diff', path: '/diff' },
