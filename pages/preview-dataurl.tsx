@@ -1,5 +1,14 @@
 import type { NextPage } from 'next'
-import { Box, Text, Flex, Textarea, Button, Image } from '@chakra-ui/react'
+import {
+  Box,
+  Text,
+  Flex,
+  Textarea,
+  Button,
+  Image,
+  Spinner,
+  Center,
+} from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
 
@@ -31,7 +40,17 @@ const PreviewDataUrl: NextPage = () => {
           <ArrowForwardIcon />
         </Button>
         <Box width="lg">
-          {src && <Image src={src} alt="data url preview" />}
+          {src && (
+            <Image
+              src={src}
+              alt="data url preview"
+              fallback={
+                <Center>
+                  <Spinner />
+                </Center>
+              }
+            />
+          )}
         </Box>
       </Flex>
     </Box>
