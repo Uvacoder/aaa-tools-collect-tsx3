@@ -12,6 +12,7 @@ const pages: { name: string; path: string }[] = [
   { name: 'Preview DataURL', path: '/preview-dataurl' },
   { name: 'File to DataURL', path: '/file-to-dataurl' },
   { name: 'Diff', path: '/diff' },
+  { name: 'SQL Format', path: '/sql-format' },
 ]
 
 export const DefaultLayout: React.FC = ({ children }) => {
