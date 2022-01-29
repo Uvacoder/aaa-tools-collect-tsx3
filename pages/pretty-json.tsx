@@ -1,6 +1,6 @@
-import type { NextPage } from 'next'
-import { Box, Text, Flex, Textarea, Button, useToast } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
+import { Box, Flex, Textarea, Button, useToast } from '@chakra-ui/react'
+import type { NextPage } from 'next'
 import React, { useState } from 'react'
 
 const PrettyJson: NextPage = () => {
@@ -9,7 +9,7 @@ const PrettyJson: NextPage = () => {
   const toast = useToast()
 
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    let inputValue = e.target.value
+    const inputValue = e.target.value
     setInput(inputValue)
   }
 

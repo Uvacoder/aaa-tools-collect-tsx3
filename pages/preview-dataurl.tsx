@@ -1,7 +1,6 @@
-import type { NextPage } from 'next'
+import { ArrowForwardIcon } from '@chakra-ui/icons'
 import {
   Box,
-  Text,
   Flex,
   Textarea,
   Button,
@@ -9,13 +8,13 @@ import {
   Spinner,
   Center,
 } from '@chakra-ui/react'
-import { ArrowForwardIcon } from '@chakra-ui/icons'
+import type { NextPage } from 'next'
 import { useState } from 'react'
 
 const PreviewDataUrl: NextPage = () => {
   const [input, setInput] = useState('')
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    let inputValue = e.target.value
+    const inputValue = e.target.value
     setInput(inputValue)
   }
 

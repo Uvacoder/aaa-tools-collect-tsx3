@@ -1,11 +1,8 @@
-import React from 'react'
+import { Link as ChakraLink } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import {
-  Link as ChakraLink,
-  LinkProps as ChakraLinkProps,
-} from '@chakra-ui/react'
+import React from 'react'
 
-export interface LinkProps extends ChakraLinkProps {
+export interface LinkProps extends React.ComponentProps<typeof ChakraLink> {
   href: string
 }
 

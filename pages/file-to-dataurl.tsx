@@ -1,6 +1,4 @@
-import type { NextPage } from 'next'
-import { useCallback, useState } from 'react'
-import { useDropzone } from 'react-dropzone'
+import { ArrowForwardIcon } from '@chakra-ui/icons'
 import {
   Flex,
   Box,
@@ -9,7 +7,9 @@ import {
   Spinner,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { ArrowForwardIcon } from '@chakra-ui/icons'
+import type { NextPage } from 'next'
+import { useCallback, useState } from 'react'
+import { useDropzone } from 'react-dropzone'
 
 const FileToDataUrl: NextPage = () => {
   const [output, setOutput] = useState('')
