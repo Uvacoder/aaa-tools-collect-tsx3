@@ -2,8 +2,9 @@ import type { NextPage } from 'next'
 import { Box, Text, Flex, Textarea, Button, useToast } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import React, { useState } from 'react'
+import { decode } from 'punycode'
 
-const UrlEncode: NextPage = () => {
+const UrlDecode: NextPage = () => {
   const [input, setInput] = useState('')
   const [output, setOutput] = useState('')
 
@@ -12,17 +13,17 @@ const UrlEncode: NextPage = () => {
     setInput(inputValue)
   }
 
-  const handleEncode = () => {
+  const handleDecode = () => {
     if (!input) return
-    const out = encodeURI(input)
+    const out = decodeURI(input)
     setOutput(out)
   }
   return (
     <Box>
-      <Text fontSize="4xl">URL Encode</Text>
+      <Text fontSize="4xl">URL Decode</Text>
       <Flex>
         <Textarea value={input} onChange={handleInputChange} height="lg" />
-        <Button onClick={handleEncode}>
+        <Button onClick={handleDecode}>
           <ArrowForwardIcon />
         </Button>
         <Textarea height="lg" value={output} />
@@ -31,4 +32,4 @@ const UrlEncode: NextPage = () => {
   )
 }
 
-export default UrlEncode
+export default UrlDecode
