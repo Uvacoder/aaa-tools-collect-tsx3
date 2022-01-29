@@ -26,6 +26,7 @@ const Navigation = () => {
     { name: 'Pretty JSON', path: '/pretty-json' },
     { name: 'URL Encode', path: '/url-encode' },
     { name: 'URL Decode', path: '/url-decode' },
+    { name: 'Preview DataURL', path: '/preview-dataurl' },
   ]
   return (
     <List spacing="4">
