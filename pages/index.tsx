@@ -1,8 +1,14 @@
 import type { NextPage } from 'next'
-import { Center } from '@chakra-ui/react'
+import { Center, Text } from '@chakra-ui/react'
 
 const Home: NextPage = () => {
-  return <Center>Home</Center>
+  return (
+    <Center>
+      <Text fontSize="5xl" fontWeight="bold">
+        Select from menus
+      </Text>
+    </Center>
+  )
 }
 
 export default Home
