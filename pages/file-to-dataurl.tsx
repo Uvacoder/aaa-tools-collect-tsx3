@@ -1,7 +1,14 @@
 import type { NextPage } from 'next'
 import { useCallback, useState } from 'react'
 import { useDropzone } from 'react-dropzone'
-import { Flex, Box, Center, Textarea, Spinner } from '@chakra-ui/react'
+import {
+  Flex,
+  Box,
+  Center,
+  Textarea,
+  Spinner,
+  useColorModeValue,
+} from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 
 const FileToDataUrl: NextPage = () => {
@@ -33,7 +40,7 @@ const FileToDataUrl: NextPage = () => {
       <Box
         {...getRootProps()}
         borderRadius="md"
-        bg="gray.300"
+        bg={useColorModeValue('gray.300', 'gray.500')}
         width="md"
         height="xs"
         cursor="pointer"

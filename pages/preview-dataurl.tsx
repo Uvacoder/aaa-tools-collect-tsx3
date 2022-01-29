@@ -31,7 +31,7 @@ const PreviewDataUrl: NextPage = () => {
       <Text fontSize="4xl">Preview Data URL</Text>
       <Flex>
         <Textarea
-          width="lg"
+          width="md"
           height="lg"
           onChange={handleInputChange}
           value={input}
@@ -39,7 +39,7 @@ const PreviewDataUrl: NextPage = () => {
         <Button onClick={handlePreview}>
           <ArrowForwardIcon />
         </Button>
-        <Box width="lg">
+        <Box width="md">
           {src && (
             <Image
               src={src}
