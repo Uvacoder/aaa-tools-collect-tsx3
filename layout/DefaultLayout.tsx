@@ -27,6 +27,7 @@ const Navigation = () => {
     { name: 'URL Encode', path: '/url-encode' },
     { name: 'URL Decode', path: '/url-decode' },
     { name: 'Preview DataURL', path: '/preview-dataurl' },
+    { name: 'File to DataURL', path: '/file-to-dataurl' },
   ]
   return (
     <List spacing="4">
