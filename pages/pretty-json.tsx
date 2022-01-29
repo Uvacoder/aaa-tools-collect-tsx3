@@ -25,7 +25,6 @@ const PrettyJson: NextPage = () => {
   }
   return (
     <Box>
-      <Text fontSize="4xl">Pretty JSON</Text>
       <Flex>
         <Textarea height="lg" onChange={handleInputChange} value={input} />
         <Button onClick={handlePretty}>

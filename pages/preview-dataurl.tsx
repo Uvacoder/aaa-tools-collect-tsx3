@@ -28,7 +28,6 @@ const PreviewDataUrl: NextPage = () => {
 
   return (
     <Box>
-      <Text fontSize="4xl">Preview Data URL</Text>
       <Flex>
         <Textarea
           width="md"

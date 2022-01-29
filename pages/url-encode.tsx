@@ -19,7 +19,6 @@ const UrlEncode: NextPage = () => {
   }
   return (
     <Box>
-      <Text fontSize="4xl">URL Encode</Text>
       <Flex>
         <Textarea value={input} onChange={handleInputChange} height="lg" />
         <Button onClick={handleEncode}>
