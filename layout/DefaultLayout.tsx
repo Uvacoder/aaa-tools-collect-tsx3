@@ -3,6 +3,14 @@ import Head from 'next/head'
 import React from 'react'
 import SidebarLink from '../components/SidebarLink'
 
+const pages = [
+  { name: 'Pretty JSON', path: '/pretty-json' },
+  { name: 'URL Encode', path: '/url-encode' },
+  { name: 'URL Decode', path: '/url-decode' },
+  { name: 'Preview DataURL', path: '/preview-dataurl' },
+  { name: 'File to DataURL', path: '/file-to-dataurl' },
+]
+
 export const DefaultLayout: React.FC = ({ children }) => {
   return (
     <>
@@ -25,13 +33,6 @@ export const DefaultLayout: React.FC = ({ children }) => {
 }
 
 const Navigation = () => {
-  const pages = [
-    { name: 'Pretty JSON', path: '/pretty-json' },
-    { name: 'URL Encode', path: '/url-encode' },
-    { name: 'URL Decode', path: '/url-decode' },
-    { name: 'Preview DataURL', path: '/preview-dataurl' },
-    { name: 'File to DataURL', path: '/file-to-dataurl' },
-  ]
   return (
     <Stack as="ul" spacing="4" marginRight="2">
       {pages.map((page, idx) => {
