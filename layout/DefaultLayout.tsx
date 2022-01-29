@@ -3,12 +3,13 @@ import Head from 'next/head'
 import React from 'react'
 import SidebarLink from '../components/SidebarLink'
 
-const pages = [
+const pages: { name: string; path: string }[] = [
   { name: 'Pretty JSON', path: '/pretty-json' },
   { name: 'URL Encode', path: '/url-encode' },
   { name: 'URL Decode', path: '/url-decode' },
   { name: 'Preview DataURL', path: '/preview-dataurl' },
   { name: 'File to DataURL', path: '/file-to-dataurl' },
+  { name: 'Diff', path: '/diff' },
 ]
 
 export const DefaultLayout: React.FC = ({ children }) => {
@@ -19,7 +20,7 @@ export const DefaultLayout: React.FC = ({ children }) => {
         <meta name="description" content="Toolbox" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box paddingLeft="4" paddingTop="2">
+      <Box paddingLeft="4" paddingRight="4" paddingTop="2">
         <Text fontSize="3xl" marginBlock="2" fontWeight="extrabold">
           Toolbox
         </Text>
